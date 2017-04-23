@@ -58,6 +58,18 @@
 			name = Items;
 			sourceTree = "<group>";
 		};
+		67392EEC1EAD5867003DBD5C /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				674603861EACBC7600C38759 /* messenger.xcdatamodeld */,
+				67392EE71EAD56F3003DBD5C /* User+CoreDataProperties.swift */,
+				67392EE61EAD56F3003DBD5C /* User+CoreDataClass.swift */,
+				67392EE41EAD56F3003DBD5C /* Message+CoreDataClass.swift */,
+				67392EE51EAD56F3003DBD5C /* Message+CoreDataProperties.swift */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
 		674603731EACBC7600C38759 = {
 			isa = PBXGroup;
 			children = (
@@ -77,17 +89,13 @@
 		6746037E1EACBC7600C38759 /* messenger */ = {
 			isa = PBXGroup;
 			children = (
-				67392EE41EAD56F3003DBD5C /* Message+CoreDataClass.swift */,
-				67392EE51EAD56F3003DBD5C /* Message+CoreDataProperties.swift */,
-				67392EE61EAD56F3003DBD5C /* User+CoreDataClass.swift */,
-				67392EE71EAD56F3003DBD5C /* User+CoreDataProperties.swift */,
+				67392EEC1EAD5867003DBD5C /* CoreData */,
 				67392EC71EAD48D2003DBD5C /* Items */,
 				674603941EAD0AE900C38759 /* Main Screen */,
 				6746037F1EACBC7600C38759 /* AppDelegate.swift */,
 				674603891EACBC7600C38759 /* Assets.xcassets */,
 				6746038B1EACBC7600C38759 /* LaunchScreen.storyboard */,
 				6746038E1EACBC7600C38759 /* Info.plist */,
-				674603861EACBC7600C38759 /* messenger.xcdatamodeld */,
 			);
 			path = messenger;
 			sourceTree = "<group>";
