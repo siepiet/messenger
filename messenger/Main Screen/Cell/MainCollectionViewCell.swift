@@ -11,10 +11,14 @@ import UIKit
 
 class MainCollectionViewCell: UICollectionViewCell {
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
+    override init(frame: CGRect) {
+        super.init(frame: frame)
         
         setupCell()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
     }
     
     func setupCell() {
