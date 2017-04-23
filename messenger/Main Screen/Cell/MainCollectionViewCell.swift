@@ -11,6 +11,23 @@ import UIKit
 
 class MainCollectionViewCell: UICollectionViewCell {
     
+    var message: Message? {
+        didSet {
+            if let message = message {
+                if let user = message.user {
+                    profileImageView.image = UIImage(named: user.photo!)
+                    hasUserReadMessageImage.image = UIImage(named: user.photo!)
+                    usernameLabel.text = user.username
+                    
+                }
+                messageLabel.text = message.text
+                let dateFormatter = DateFormatter()
+                dateFormatter.dateFormat = "h:mm a"
+                hourLabel.text = dateFormatter.string(from: message.date!)
+            }
+        }
+    }
+    
     let profileImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
@@ -71,12 +88,12 @@ class MainCollectionViewCell: UICollectionViewCell {
     }
     
     func setupCell() {
-        
-        profileImageView.image = UIImage(named: "profile")
-        hasUserReadMessageImage.image = UIImage(named: "profile")
-        usernameLabel.text = "Mateusz Siepietowski"
-        messageLabel.text = "Cześć. Co słychać?"
-        hourLabel.text = "08:43 PM"
+//        
+//        profileImageView.image = UIImage(named: "profile")
+//        hasUserReadMessageImage.image = UIImage(named: "profile")
+//        usernameLabel.text = "Mateusz Siepietowski"
+//        messageLabel.text = "Cześć. Co słychać?"
+//        hourLabel.text = "08:43 PM"
         
         addSubview(profileImageView)
         addSubview(onePixDivider)
@@ -103,7 +120,7 @@ class MainCollectionViewCell: UICollectionViewCell {
         
         detailsView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-8-[v0]", options: NSLayoutFormatOptions(), metrics: nil, views: ["v0": usernameLabel]))
         detailsView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:[v0]-8-|", options: NSLayoutFormatOptions(), metrics: nil, views: ["v0": messageLabel]))
-        detailsView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-4-[v0(200)]-4-[v1]-4-|", options: NSLayoutFormatOptions(), metrics: nil, views: ["v0":usernameLabel, "v1": hourLabel]))
+        detailsView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-4-[v0]-4-[v1(60)]-4-|", options: NSLayoutFormatOptions(), metrics: nil, views: ["v0":usernameLabel, "v1": hourLabel]))
         detailsView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-4-[v0]-4-[v1(20)]-4-|", options: NSLayoutFormatOptions(), metrics: nil, views: ["v0":messageLabel, "v1": hasUserReadMessageImage]))
         detailsView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-8-[v0]", options: NSLayoutFormatOptions(), metrics: nil, views: ["v0": hourLabel]))
         detailsView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:[v0(20)]-8-|", options: NSLayoutFormatOptions(), metrics: nil, views: ["v0":hasUserReadMessageImage]))

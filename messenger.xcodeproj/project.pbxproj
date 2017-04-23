@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67392ECB1EAD492F003DBD5C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67392ECA1EAD492F003DBD5C /* MainViewController.swift */; };
+		67392ECD1EAD4951003DBD5C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67392ECC1EAD4951003DBD5C /* User.swift */; };
+		67392ECF1EAD495D003DBD5C /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67392ECE1EAD495D003DBD5C /* Message.swift */; };
 		674603801EACBC7600C38759 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6746037F1EACBC7600C38759 /* AppDelegate.swift */; };
-		674603821EACBC7600C38759 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674603811EACBC7600C38759 /* MainViewController.swift */; };
 		674603881EACBC7600C38759 /* messenger.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 674603861EACBC7600C38759 /* messenger.xcdatamodeld */; };
 		6746038A1EACBC7600C38759 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 674603891EACBC7600C38759 /* Assets.xcassets */; };
 		6746038D1EACBC7600C38759 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6746038B1EACBC7600C38759 /* LaunchScreen.storyboard */; };
@@ -16,9 +18,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		67392ECA1EAD492F003DBD5C /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = "Main Screen/MainViewController.swift"; sourceTree = "<group>"; };
+		67392ECC1EAD4951003DBD5C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Items/User.swift; sourceTree = "<group>"; };
+		67392ECE1EAD495D003DBD5C /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Message.swift; path = Items/Message.swift; sourceTree = "<group>"; };
 		6746037C1EACBC7600C38759 /* messenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = messenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6746037F1EACBC7600C38759 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		674603811EACBC7600C38759 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		674603871EACBC7600C38759 /* messenger.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = messenger.xcdatamodel; sourceTree = "<group>"; };
 		674603891EACBC7600C38759 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6746038C1EACBC7600C38759 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +41,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		67392EC71EAD48D2003DBD5C /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				67392ECC1EAD4951003DBD5C /* User.swift */,
+				67392ECE1EAD495D003DBD5C /* Message.swift */,
+			);
+			name = Items;
+			sourceTree = "<group>";
+		};
 		674603731EACBC7600C38759 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +69,7 @@
 		6746037E1EACBC7600C38759 /* messenger */ = {
 			isa = PBXGroup;
 			children = (
+				67392EC71EAD48D2003DBD5C /* Items */,
 				674603941EAD0AE900C38759 /* Main Screen */,
 				6746037F1EACBC7600C38759 /* AppDelegate.swift */,
 				674603891EACBC7600C38759 /* Assets.xcassets */,
@@ -70,7 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				674603951EAD0AFC00C38759 /* Cell */,
-				674603811EACBC7600C38759 /* MainViewController.swift */,
+				67392ECA1EAD492F003DBD5C /* MainViewController.swift */,
 			);
 			name = "Main Screen";
 			sourceTree = "<group>";
@@ -155,10 +169,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				674603821EACBC7600C38759 /* MainViewController.swift in Sources */,
 				674603801EACBC7600C38759 /* AppDelegate.swift in Sources */,
 				674603881EACBC7600C38759 /* messenger.xcdatamodeld in Sources */,
 				674603971EAD0B1B00C38759 /* MainCollectionViewCell.swift in Sources */,
+				67392ECF1EAD495D003DBD5C /* Message.swift in Sources */,
+				67392ECD1EAD4951003DBD5C /* User.swift in Sources */,
+				67392ECB1EAD492F003DBD5C /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +330,7 @@
 				674603931EACBC7600C38759 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
