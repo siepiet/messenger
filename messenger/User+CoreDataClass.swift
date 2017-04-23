@@ -1,5 +1,5 @@
 //
-//  Message.swift
+//  User+CoreDataClass.swift
 //  messenger
 //
 //  Created by Mateusz Siepietowski on 23.04.2017.
@@ -7,10 +7,9 @@
 //
 
 import Foundation
+import CoreData
 
-//class Message: NSObject {
-//    
-//    var text: String?
-//    var date: Date?
-//    var user: User?
-//}
+
+public class User: NSManagedObject {
+
+}
