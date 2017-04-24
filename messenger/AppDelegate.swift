@@ -19,9 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
-        let layout = UICollectionViewFlowLayout()
-        let mVC = MainViewController(collectionViewLayout: layout)
-        window?.rootViewController = UINavigationController(rootViewController: mVC)
+        window?.rootViewController = TabBarController()
         
         // Override point for customization after application launch.
         return true

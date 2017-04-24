@@ -40,31 +40,23 @@ class MainViewController: UICollectionViewController, UICollectionViewDelegateFl
     
     func setupContent() {
         
+        let userMati = User()
+        userMati.username = "Mateusz Siepietowski"
+        userMati.photo = "mati"
+        let userRoksi = User()
+        userRoksi.username = "Roksana Cis"
+        userRoksi.photo = "roksi"
         
-        let delegate = UIApplication.shared.delegate as? AppDelegate
-        if let context = delegate?.persistentContainer.viewContext{
-            
-            let userMati = NSEntityDescription.entity(forEntityName: "User", in: context) as! User
-            userMati.username = "Mateusz Siepietowski"
-            userMati.photo = "mati"
-            let userRoksi = NSEntityDescription.entity(forEntityName: "User", in: context) as! User
-            userRoksi.username = "Roksana Cis"
-            userRoksi.photo = "roksi"
-            
-            let messageMati = NSEntityDescription.entity(forEntityName: "Message", in: context) as! Message
-            messageMati.text = "Cześć. Co słychać? :)"
-            messageMati.date = Date()
-            messageMati.user = userMati
-            let messageRoksi = NSEntityDescription.entity(forEntityName: "Message", in: context) as! Message
-            messageRoksi.text = "Jak się masz? U mnie wszystko w porządku. :)"
-            messageRoksi.date = Date()
-            messageRoksi.user = userRoksi
+        let messageMati = Message()
+        messageMati.text = "Cześć. Co słychać? :)"
+        messageMati.date = Date()
+        messageMati.user = userMati
+        let messageRoksi = Message()
+        messageRoksi.text = "Jak się masz? U mnie wszystko w porządku. :)"
+        messageRoksi.date = Date()
+        messageRoksi.user = userRoksi
         
-            messages = [messageMati, messageRoksi]
-        }
-        
-        
-        
+        messages = [messageMati, messageRoksi]
         
     }
 }

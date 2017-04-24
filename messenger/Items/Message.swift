@@ -8,9 +8,9 @@
 
 import Foundation
 
-//class Message: NSObject {
-//    
-//    var text: String?
-//    var date: Date?
-//    var user: User?
-//}
+class Message: NSObject {
+    
+    var text: String?
+    var date: Date?
+    var user: User?
+}

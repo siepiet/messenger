@@ -11,6 +11,15 @@ import UIKit
 
 class MainCollectionViewCell: UICollectionViewCell {
     
+    override var isHighlighted: Bool {
+        didSet {
+            backgroundColor = isHighlighted ? UIColor(red: 0, green: 134/255, blue: 249/255, alpha: 1) : UIColor.white
+            usernameLabel.textColor = isHighlighted ? UIColor.white : UIColor.gray
+            messageLabel.textColor = isHighlighted ? UIColor.white : UIColor.lightGray
+            hourLabel.textColor = isHighlighted ? UIColor.white : UIColor.lightGray
+        }
+    }
+    
     var message: Message? {
         didSet {
             if let message = message {

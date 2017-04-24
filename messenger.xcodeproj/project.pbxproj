@@ -10,32 +10,26 @@
 		67392ECB1EAD492F003DBD5C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67392ECA1EAD492F003DBD5C /* MainViewController.swift */; };
 		67392ECD1EAD4951003DBD5C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67392ECC1EAD4951003DBD5C /* User.swift */; };
 		67392ECF1EAD495D003DBD5C /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67392ECE1EAD495D003DBD5C /* Message.swift */; };
-		67392EE81EAD56F3003DBD5C /* Message+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67392EE41EAD56F3003DBD5C /* Message+CoreDataClass.swift */; };
-		67392EE91EAD56F3003DBD5C /* Message+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67392EE51EAD56F3003DBD5C /* Message+CoreDataProperties.swift */; };
-		67392EEA1EAD56F3003DBD5C /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67392EE61EAD56F3003DBD5C /* User+CoreDataClass.swift */; };
-		67392EEB1EAD56F3003DBD5C /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67392EE71EAD56F3003DBD5C /* User+CoreDataProperties.swift */; };
 		674603801EACBC7600C38759 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6746037F1EACBC7600C38759 /* AppDelegate.swift */; };
-		674603881EACBC7600C38759 /* messenger.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 674603861EACBC7600C38759 /* messenger.xcdatamodeld */; };
 		6746038A1EACBC7600C38759 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 674603891EACBC7600C38759 /* Assets.xcassets */; };
 		6746038D1EACBC7600C38759 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6746038B1EACBC7600C38759 /* LaunchScreen.storyboard */; };
 		674603971EAD0B1B00C38759 /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674603961EAD0B1B00C38759 /* MainCollectionViewCell.swift */; };
+		67A6FEE61EAE870400C135D9 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A6FEE51EAE870400C135D9 /* TabBarController.swift */; };
+		67A6FEEA1EAE893F00C135D9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A6FEE91EAE893F00C135D9 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		67392ECA1EAD492F003DBD5C /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = "Main Screen/MainViewController.swift"; sourceTree = "<group>"; };
 		67392ECC1EAD4951003DBD5C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Items/User.swift; sourceTree = "<group>"; };
 		67392ECE1EAD495D003DBD5C /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Message.swift; path = Items/Message.swift; sourceTree = "<group>"; };
-		67392EE41EAD56F3003DBD5C /* Message+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Message+CoreDataClass.swift"; sourceTree = "<group>"; };
-		67392EE51EAD56F3003DBD5C /* Message+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Message+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		67392EE61EAD56F3003DBD5C /* User+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
-		67392EE71EAD56F3003DBD5C /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		6746037C1EACBC7600C38759 /* messenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = messenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6746037F1EACBC7600C38759 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		674603871EACBC7600C38759 /* messenger.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = messenger.xcdatamodel; sourceTree = "<group>"; };
 		674603891EACBC7600C38759 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6746038C1EACBC7600C38759 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6746038E1EACBC7600C38759 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		674603961EAD0B1B00C38759 /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainCollectionViewCell.swift; path = "Main Screen/Cell/MainCollectionViewCell.swift"; sourceTree = "<group>"; };
+		67A6FEE51EAE870400C135D9 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		67A6FEE91EAE893F00C135D9 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = Profile/ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,11 +55,6 @@
 		67392EEC1EAD5867003DBD5C /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				674603861EACBC7600C38759 /* messenger.xcdatamodeld */,
-				67392EE71EAD56F3003DBD5C /* User+CoreDataProperties.swift */,
-				67392EE61EAD56F3003DBD5C /* User+CoreDataClass.swift */,
-				67392EE41EAD56F3003DBD5C /* Message+CoreDataClass.swift */,
-				67392EE51EAD56F3003DBD5C /* Message+CoreDataProperties.swift */,
 			);
 			name = CoreData;
 			sourceTree = "<group>";
@@ -89,13 +78,14 @@
 		6746037E1EACBC7600C38759 /* messenger */ = {
 			isa = PBXGroup;
 			children = (
-				67392EEC1EAD5867003DBD5C /* CoreData */,
+				6746037F1EACBC7600C38759 /* AppDelegate.swift */,
 				67392EC71EAD48D2003DBD5C /* Items */,
 				674603941EAD0AE900C38759 /* Main Screen */,
-				6746037F1EACBC7600C38759 /* AppDelegate.swift */,
-				674603891EACBC7600C38759 /* Assets.xcassets */,
-				6746038B1EACBC7600C38759 /* LaunchScreen.storyboard */,
+				67A6FEE81EAE892100C135D9 /* Profile */,
+				67A6FEE51EAE870400C135D9 /* TabBarController.swift */,
 				6746038E1EACBC7600C38759 /* Info.plist */,
+				67392EEC1EAD5867003DBD5C /* CoreData */,
+				67A6FEE71EAE88E800C135D9 /* Resources */,
 			);
 			path = messenger;
 			sourceTree = "<group>";
@@ -115,6 +105,23 @@
 				674603961EAD0B1B00C38759 /* MainCollectionViewCell.swift */,
 			);
 			name = Cell;
+			sourceTree = "<group>";
+		};
+		67A6FEE71EAE88E800C135D9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				674603891EACBC7600C38759 /* Assets.xcassets */,
+				6746038B1EACBC7600C38759 /* LaunchScreen.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		67A6FEE81EAE892100C135D9 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				67A6FEE91EAE893F00C135D9 /* ProfileViewController.swift */,
+			);
+			name = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,15 +197,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				674603801EACBC7600C38759 /* AppDelegate.swift in Sources */,
-				674603881EACBC7600C38759 /* messenger.xcdatamodeld in Sources */,
 				674603971EAD0B1B00C38759 /* MainCollectionViewCell.swift in Sources */,
 				67392ECF1EAD495D003DBD5C /* Message.swift in Sources */,
+				67A6FEE61EAE870400C135D9 /* TabBarController.swift in Sources */,
+				67A6FEEA1EAE893F00C135D9 /* ProfileViewController.swift in Sources */,
 				67392ECD1EAD4951003DBD5C /* User.swift in Sources */,
-				67392EEA1EAD56F3003DBD5C /* User+CoreDataClass.swift in Sources */,
 				67392ECB1EAD492F003DBD5C /* MainViewController.swift in Sources */,
-				67392EE91EAD56F3003DBD5C /* Message+CoreDataProperties.swift in Sources */,
-				67392EEB1EAD56F3003DBD5C /* User+CoreDataProperties.swift in Sources */,
-				67392EE81EAD56F3003DBD5C /* Message+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,19 +361,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		674603861EACBC7600C38759 /* messenger.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				674603871EACBC7600C38759 /* messenger.xcdatamodel */,
-			);
-			currentVersion = 674603871EACBC7600C38759 /* messenger.xcdatamodel */;
-			path = messenger.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 674603741EACBC7600C38759 /* Project object */;
 }

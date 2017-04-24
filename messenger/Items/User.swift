@@ -8,8 +8,8 @@
 
 import Foundation
 
-//class User: NSObject {
-//    
-//    var username: String?
-//    var photo: String?
-//}
+class User: NSObject {
+    
+    var username: String?
+    var photo: String?
+}
