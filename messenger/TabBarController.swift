@@ -24,6 +24,7 @@ class TabBarController: UITabBarController {
         profileNavVC.title = "Profil"
         profileNavVC.tabBarItem.image = UIImage(named: "profile")
         profileNavVC.tabBarItem.selectedImage = UIImage(named: "profile_selected")
+        
         viewControllers = [mainNavVC, profileNavVC]
     }
 }

@@ -16,6 +16,8 @@
 		674603971EAD0B1B00C38759 /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674603961EAD0B1B00C38759 /* MainCollectionViewCell.swift */; };
 		67A6FEE61EAE870400C135D9 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A6FEE51EAE870400C135D9 /* TabBarController.swift */; };
 		67A6FEEA1EAE893F00C135D9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A6FEE91EAE893F00C135D9 /* ProfileViewController.swift */; };
+		67A6FEED1EAE8DA200C135D9 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A6FEEC1EAE8DA200C135D9 /* ChatViewController.swift */; };
+		67A6FEF01EAE8DF500C135D9 /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A6FEEF1EAE8DF500C135D9 /* ChatCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		674603961EAD0B1B00C38759 /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainCollectionViewCell.swift; path = "Main Screen/Cell/MainCollectionViewCell.swift"; sourceTree = "<group>"; };
 		67A6FEE51EAE870400C135D9 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		67A6FEE91EAE893F00C135D9 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = Profile/ProfileViewController.swift; sourceTree = "<group>"; };
+		67A6FEEC1EAE8DA200C135D9 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatViewController.swift; path = Chat/ChatViewController.swift; sourceTree = "<group>"; };
+		67A6FEEF1EAE8DF500C135D9 /* ChatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatCell.swift; path = Chat/Cell/ChatCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,7 @@
 		6746037E1EACBC7600C38759 /* messenger */ = {
 			isa = PBXGroup;
 			children = (
+				67A6FEEB1EAE8D8600C135D9 /* Chat */,
 				6746037F1EACBC7600C38759 /* AppDelegate.swift */,
 				67392EC71EAD48D2003DBD5C /* Items */,
 				674603941EAD0AE900C38759 /* Main Screen */,
@@ -122,6 +127,23 @@
 				67A6FEE91EAE893F00C135D9 /* ProfileViewController.swift */,
 			);
 			name = Profile;
+			sourceTree = "<group>";
+		};
+		67A6FEEB1EAE8D8600C135D9 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				67A6FEEE1EAE8DE100C135D9 /* Cell */,
+				67A6FEEC1EAE8DA200C135D9 /* ChatViewController.swift */,
+			);
+			name = Chat;
+			sourceTree = "<group>";
+		};
+		67A6FEEE1EAE8DE100C135D9 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				67A6FEEF1EAE8DF500C135D9 /* ChatCell.swift */,
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +220,8 @@
 			files = (
 				674603801EACBC7600C38759 /* AppDelegate.swift in Sources */,
 				674603971EAD0B1B00C38759 /* MainCollectionViewCell.swift in Sources */,
+				67A6FEF01EAE8DF500C135D9 /* ChatCell.swift in Sources */,
+				67A6FEED1EAE8DA200C135D9 /* ChatViewController.swift in Sources */,
 				67392ECF1EAD495D003DBD5C /* Message.swift in Sources */,
 				67A6FEE61EAE870400C135D9 /* TabBarController.swift in Sources */,
 				67A6FEEA1EAE893F00C135D9 /* ProfileViewController.swift in Sources */,
